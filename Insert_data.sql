@@ -1,3 +1,6 @@
+
+SET search_path TO airbnb_system;
+
 INSERT INTO users (user_id, full_name, email, phone, password, gender, status) VALUES
 (1,'Aarav Sharma','aarav.sharma1@gmail.com','9876500001','pass1','Male','Active'),
 (2,'Priya Patel','priya.patel2@gmail.com','9876500002','pass2','Female','Active'),
@@ -560,17 +563,6 @@ rating, comment, review_date
 (48,48,48,49,5,'Amazing luxury stay',CURRENT_TIMESTAMP),
 (49,49,49,50,4,'Good and affordable',CURRENT_TIMESTAMP),
 (50,50,50,26,5,'Highly satisfied with stay',CURRENT_TIMESTAMP);
-
-INSERT INTO cancellation (
-cancellation_id, booking_id, cancelled_by,
-cancellation_date, refund_amount, reason
-) VALUES
-
-(1,3,3,CURRENT_TIMESTAMP,12000,'Property condition not satisfactory'),
-(2,10,10,CURRENT_TIMESTAMP,6000,'Change of travel plans'),
-(3,20,20,CURRENT_TIMESTAMP,5000,'Found better accommodation'),
-(4,27,27,CURRENT_TIMESTAMP,10000,'Personal emergency'),
-(5,35,35,CURRENT_TIMESTAMP,4000,'Budget constraints');
 
 INSERT INTO cancellation (
 cancellation_id, booking_id, cancelled_by,
